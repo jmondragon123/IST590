@@ -26,7 +26,7 @@ Time spent: **8** hours spent in total
     - Vulnerability types: Fingerprinting
     - Tested in version:4.2
     - Fixed in version: 
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: ![](https://github.com/jmondragon123/IST590/blob/master/Fingerprint1.gif)
   - [ ] Steps to recreate: 
     1. Navigate to the url below:
      ```
