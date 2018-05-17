@@ -21,13 +21,18 @@ Time spent: **8** hours spent in total
      3. Refresh the page and you will get an alert.
   - [ ] Affected source code:
     - [Link 1](https://blog.sucuri.net/2017/03/stored-xss-in-wordpress-core.html)
-2. (Required) Vulnerability Name or ID
+2. Wordpress Readme.html Version number
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
+    - Vulnerability types: Fingerprinting
+    - Tested in version:4.2
     - Fixed in version: 
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
+    1. Navigate to the url below:
+     ```
+     http://wpdistillery.vm/readme.html
+     ```
+     2. Website will show what version WP is running
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 3. (Required) Vulnerability Name or ID
