@@ -7,7 +7,7 @@ Time spent: **8** hours spent in total
 ## Pentesting Report
 
 1. WordPress  4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
-  - [ ] Summary: 
+  - [ ] Summary: Puts a Youtube Url with XSS at the end to create an alert popup.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version:  4.7.3
@@ -22,7 +22,7 @@ Time spent: **8** hours spent in total
   - [ ] Affected source code:
     - [Link 1](https://blog.sucuri.net/2017/03/stored-xss-in-wordpress-core.html)
 2. Wordpress Readme.html Version number
-  - [ ] Summary: 
+  - [ ] Summary: Able to navigate to the readme.html and find the version number of WP running.
     - Vulnerability types: Fingerprinting
     - Tested in version:4.2
     - Fixed in version: 
@@ -37,11 +37,14 @@ Time spent: **8** hours spent in total
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
+    - Vulnerability types: Privilege Escalation
+    - Tested in version: 4.2
     - Fixed in version: 
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: ![](https://github.com/jmondragon123/IST590/blob/master/Privilege%20Escalation.gif)
   - [ ] Steps to recreate: 
+    1. Post a comment on a page using a subscriber user.
+    2. Approve the comment using an Admin account.
+    3. Any new comments created by the Subscriber on that page will be able to post withouth admin approval.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
@@ -61,7 +64,7 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+Difficult looking through the wpscan output and finding exploits to attempt.
 
 ## License
 
