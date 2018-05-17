@@ -11,8 +11,14 @@ Time spent: **8** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version:  4.7.3
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+  - [ ] GIF Walkthrough: ![](https://github.com/jmondragon123/IST590/blob/master/XSS.gif)
+  - [ ] Steps to recreate:
+    1. Log in to an account that has editor privileges.
+    2. Add the below comment to any page.
+      ```
+      https://youtube.com/embed/12345<svg onload=alert(1)>
+      ```
+     3. Refresh the page and you will get an alert.
   - [ ] Affected source code:
     - [Link 1](https://blog.sucuri.net/2017/03/stored-xss-in-wordpress-core.html)
 1. (Required) Vulnerability Name or ID
@@ -33,24 +39,7 @@ Time spent: **8** hours spent in total
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
+
 
 ## Assets
 
@@ -60,6 +49,7 @@ List any additional assets, such as scripts or files
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
+
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
